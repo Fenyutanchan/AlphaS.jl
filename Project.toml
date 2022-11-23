@@ -1,0 +1,4 @@
+name = "AlphaS"
+uuid = "cb1ee771-e516-45dd-b486-2e56d6c85bfe"
+authors = ["Quan-feng WU <wuquanfeng@ihep.ac.cn>"]
+version = "0.1.0"
