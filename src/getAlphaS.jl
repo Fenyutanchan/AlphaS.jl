@@ -1,6 +1,6 @@
-function get_AlphaS(QQ::Real)::Real
+function get_AlphaS(QQ::Real; AlphaS_MZ::Real=.1179)::Real
     MZsqr       =   91.1876^2
-    AlphaS_MZ   =   .1179
+    # AlphaS_MZ   =   .1179
     aS_MZ       =   AlphaS_MZ / (4 * π)
     C1          =   inv_solution_to_β_function(aS_MZ) + log(MZsqr)
     target      =   C1 - log(QQ^2)
@@ -63,9 +63,9 @@ function inv_solution_to_β_function(aS::Real)::Real
     return  result
 end
 
-function get_ΛQCD()::Real
+function get_ΛQCD(; AlphaS_MZ::Real=.1179)::Real
     MZsqr       =   91.1876^2
-    AlphaS_MZ   =   .1179
+    # AlphaS_MZ   =   .1179
     aS_MZ       =   AlphaS_MZ / (4 * π)
     C1          =   inv_solution_to_β_function(aS_MZ) + log(MZsqr)
 
